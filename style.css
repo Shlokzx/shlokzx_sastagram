@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, gray, black);
+}
+body .card {
+  height: 450px;
+  width: 290px;
+  background: linear-gradient(to right bottom, rgb(194, 167, 119), rgb(255, 198, 198));
+  box-shadow: 0 0 20px lightcyan;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+body .card .post {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+body .card .post .post-container {
+  margin-top: 10px;
+  border-radius: 12px;
+  height: 220px;
+  width: 250px;
+  box-shadow: 0 0 10px black;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+body .card .post .post-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .card .post .bottom-text {
+  display: flex;
+  height: 40px;
+  width: 80%;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .card .post .bottom-text h4 i {
+  font-size: 20px;
+  color: rgb(93, 131, 180);
+  cursor: pointer;
+}
+body .card .post .bottom-text h4 #likes {
+  color: red;
+}
+body .card h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  background: linear-gradient(to right bottom, rgb(109, 25, 109), rgb(16, 91, 141));
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+body .card .storiyan::-webkit-scrollbar {
+  display: none;
+}
+body .card .storiyan {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-y: auto;
+  padding-inline: 5px;
+}
+body .card .storiyan .story {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid rgb(117, 40, 117);
+  filter: drop-shadow(0 0 2px black);
+}
+body .card .storiyan .story img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+body .card #full-screen {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  transition: all 0.2s linear;
+}
+body .card .captions {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  width: 250px;
+  text-align: start;
+}/*# sourceMappingURL=style.css.map */
